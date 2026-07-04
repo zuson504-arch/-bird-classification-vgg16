@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="py-5">
+
+    <div class="text-center mb-5">
+
+        <span class="badge bg-primary mb-3">
+            AI Research Project
+        </span>
+
+        <h1 class="display-5 fw-bold">
+            About AvianAI
+        </h1>
+
+        <p class="text-muted col-lg-8 mx-auto">
+            AvianAI is a web-based artificial intelligence application that classifies bird species using Transfer
+            Learning with the VGG16 architecture. This project was developed as part of a Deep Learning course
+            assignment.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-8">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body p-4">
+
+                    <h3 class="fw-bold mb-3">
+                        VGG16 Transfer Learning
+                    </h3>
+
+                    <p>
+                        This application uses the VGG16 Convolutional Neural Network pre-trained on the ImageNet
+                        dataset.
+                        Transfer Learning enables the model to learn bird image features efficiently without training
+                        from scratch.
+                    </p>
+
+                    <ul>
+
+                        <li>Input Image Size : 224 × 224</li>
+
+                        <li>Architecture : VGG16</li>
+
+                        <li>Framework : TensorFlow & Keras</li>
+
+                        <li>Optimizer : Adam</li>
+
+                        <li>Loss Function : Categorical Crossentropy</li>
+
+                        <li>Output : 20 Bird Species</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <h4 class="fw-bold mb-3">
+                        Model Information
+                    </h4>
+
+                    <table class="table">
+
+                        <tr>
+
+                            <td>Dataset</td>
+
+                            <td>20 Bird Species</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Model</td>
+
+                            <td>VGG16</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Transfer Learning</td>
+
+                            <td>Yes</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Validation Accuracy</td>
+
+                            <td>85%</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-md-3">
+
+            <div class="card text-center p-4">
+
+                <h2 class="text-primary fw-bold">
+                    20
+                </h2>
+
+                <p>Bird Species</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card text-center p-4">
+
+                <h2 class="text-primary fw-bold">
+                    VGG16
+                </h2>
+
+                <p>Deep Learning Model</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card text-center p-4">
+
+                <h2 class="text-primary fw-bold">
+                    85%
+                </h2>
+
+                <p>Validation Accuracy</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card text-center p-4">
+
+                <h2 class="text-primary fw-bold">
+                    Flask
+                </h2>
+
+                <p>Web Framework</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

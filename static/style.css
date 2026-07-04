@@ -1,0 +1,90 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7ff, #eef2ff);
+}
+
+/* NAVBAR GLASS */
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* CARD PREMIUM */
+.card {
+    border: none;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* BUTTON PREMIUM */
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    border: none;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #1d4ed8, #4338ca);
+}
+
+/* HERO TEXT */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* UPLOAD BOX */
+.upload-box {
+    border: 2px dashed #4f46e5;
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* IMAGE PREVIEW */
+.preview-img {
+    max-height: 350px;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CONFIDENCE BAR */
+.progress {
+    height: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+/* TOP 3 CARD */
+.result-card {
+    border-radius: 16px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: #888;
+}

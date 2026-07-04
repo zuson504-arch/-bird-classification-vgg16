@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<div class="text-center mt-5">
+
+    <h1 class="fw-bold display-5">
+        Bird Species Classification AI
+    </h1>
+
+    <p class="text-muted mt-2">
+        Upload image and let AI identify bird species using VGG16 Transfer Learning
+    </p>
+
+    <a href="/predict" class="btn btn-primary mt-3 px-4 py-2">
+        Start Prediction
+    </a>
+</div>
+
+<!-- FEATURE SECTION -->
+<div class="row mt-5">
+
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5>🧠 AI Powered</h5>
+            <p class="text-muted">Uses VGG16 deep learning model trained on 20 bird species.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5>⚡ Fast Prediction</h5>
+            <p class="text-muted">Get results in under 1 second after model inference.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5>🎯 High Accuracy</h5>
+            <p class="text-muted">Achieves strong validation accuracy for bird classification.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- CTA SECTION -->
+<div class="card mt-5 p-5 text-center">
+
+    <h3>Ready to Identify Birds?</h3>
+    <p class="text-muted">Click below and upload your bird image</p>
+
+    <a href="/predict" class="btn btn-primary px-4 py-2">
+        Try Now
+    </a>
+
+</div>
+
+{% endblock %}

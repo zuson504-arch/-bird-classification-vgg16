@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-lg-8">
+
+        <div class="card p-5">
+
+            <h2 class="text-center fw-bold mb-3">
+                Bird Species Prediction
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+                Upload a bird image and let AvianAI identify its species.
+            </p>
+
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+
+                <div class="mb-4">
+
+                    <label class="form-label fw-semibold">
+                        Select Bird Image
+                    </label>
+
+                    <input type="file" class="form-control" id="imageInput" name="image" accept="image/*" required>
+
+                </div>
+
+                <!-- Preview -->
+
+                <div class="text-center mb-4">
+
+                    <img id="preview" src="" class="img-fluid rounded shadow" style="display:none;max-height:350px;">
+
+                </div>
+
+                <button class="btn btn-primary w-100 py-3">
+
+                    🔍 Predict Bird Species
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    const input = document.getElementById("imageInput");
+
+    const preview = document.getElementById("preview");
+
+    input.onchange = function () {
+
+        preview.src = URL.createObjectURL(input.files[0]);
+
+        preview.style.display = "block";
+
+    }
+
+</script>
+
+{% endblock %}
